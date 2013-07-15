@@ -18,6 +18,9 @@
 		F4E2D94E1794154F0027079B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4E2D94D1794154F0027079B /* Default-568h@2x.png */; };
 		F4E2D9511794154F0027079B /* CTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E2D9501794154F0027079B /* CTViewController.m */; };
 		F4E2D9541794154F0027079B /* CTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4E2D9521794154F0027079B /* CTViewController.xib */; };
+		F4E2D95C179416BC0027079B /* CTColourItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E2D95B179416BC0027079B /* CTColourItem.m */; };
+		F4E2D95F17941CFB0027079B /* CTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E2D95E17941CFB0027079B /* CTTableViewCell.m */; };
+		F4E2D96117941D740027079B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E2D96017941D740027079B /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,11 @@
 		F4E2D94F1794154F0027079B /* CTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTViewController.h; sourceTree = "<group>"; };
 		F4E2D9501794154F0027079B /* CTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTViewController.m; sourceTree = "<group>"; };
 		F4E2D9531794154F0027079B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CTViewController.xib; sourceTree = "<group>"; };
+		F4E2D95A179416BC0027079B /* CTColourItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTColourItem.h; sourceTree = "<group>"; };
+		F4E2D95B179416BC0027079B /* CTColourItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTColourItem.m; sourceTree = "<group>"; };
+		F4E2D95D17941CFB0027079B /* CTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTTableViewCell.h; sourceTree = "<group>"; };
+		F4E2D95E17941CFB0027079B /* CTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTTableViewCell.m; sourceTree = "<group>"; };
+		F4E2D96017941D740027079B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E2D96117941D740027079B /* QuartzCore.framework in Frameworks */,
 				F4E2D9381794154F0027079B /* UIKit.framework in Frameworks */,
 				F4E2D93A1794154F0027079B /* Foundation.framework in Frameworks */,
 				F4E2D93C1794154F0027079B /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +65,7 @@
 		F4E2D92B1794154F0027079B = {
 			isa = PBXGroup;
 			children = (
+				F4E2D96017941D740027079B /* QuartzCore.framework */,
 				F4E2D93D1794154F0027079B /* ColourTrack */,
 				F4E2D9361794154F0027079B /* Frameworks */,
 				F4E2D9351794154F0027079B /* Products */,
@@ -84,9 +94,13 @@
 			isa = PBXGroup;
 			children = (
 				F4E2D9461794154F0027079B /* CTAppDelegate.h */,
+				F4E2D95A179416BC0027079B /* CTColourItem.h */,
+				F4E2D95B179416BC0027079B /* CTColourItem.m */,
 				F4E2D9471794154F0027079B /* CTAppDelegate.m */,
 				F4E2D94F1794154F0027079B /* CTViewController.h */,
 				F4E2D9501794154F0027079B /* CTViewController.m */,
+				F4E2D95D17941CFB0027079B /* CTTableViewCell.h */,
+				F4E2D95E17941CFB0027079B /* CTTableViewCell.m */,
 				F4E2D9521794154F0027079B /* CTViewController.xib */,
 				F4E2D93E1794154F0027079B /* Supporting Files */,
 			);
@@ -177,6 +191,8 @@
 				F4E2D9441794154F0027079B /* main.m in Sources */,
 				F4E2D9481794154F0027079B /* CTAppDelegate.m in Sources */,
 				F4E2D9511794154F0027079B /* CTViewController.m in Sources */,
+				F4E2D95C179416BC0027079B /* CTColourItem.m in Sources */,
+				F4E2D95F17941CFB0027079B /* CTTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
