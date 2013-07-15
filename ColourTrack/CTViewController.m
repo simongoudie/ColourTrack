@@ -12,6 +12,7 @@
 @implementation CTViewController {
     // an array of colour items
     NSMutableArray* _colourItems;
+    NSMutableArray* _colours;
 }
 
 - (void)viewDidLoad
@@ -37,13 +38,13 @@
     {
         // create a dummy colour list
         _colourItems = [[NSMutableArray alloc] init];
-        [_colourItems addObject:[CTColourItem ColourItemWithText:@"Red"]];
-        [_colourItems addObject:[CTColourItem ColourItemWithText:@"Orange"]];
-        [_colourItems addObject:[CTColourItem ColourItemWithText:@"Yellow"]];
-        [_colourItems addObject:[CTColourItem ColourItemWithText:@"Green"]];
-        [_colourItems addObject:[CTColourItem ColourItemWithText:@"Blue"]];
-        [_colourItems addObject:[CTColourItem ColourItemWithText:@"Indigo"]];
-        [_colourItems addObject:[CTColourItem ColourItemWithText:@"Violet"]];
+        [_colourItems addObject:[CTColourItem ColourItemWithText:@"Red"]]; // 1/0/0
+        [_colourItems addObject:[CTColourItem ColourItemWithText:@"Orange"]]; // 1/.5/0
+        [_colourItems addObject:[CTColourItem ColourItemWithText:@"Yellow"]]; // 1/1/0
+        [_colourItems addObject:[CTColourItem ColourItemWithText:@"Green"]]; // 0/1/0
+        [_colourItems addObject:[CTColourItem ColourItemWithText:@"Blue"]]; // 0/0/1
+        [_colourItems addObject:[CTColourItem ColourItemWithText:@"Indigo"]]; // 0/.5/1
+        [_colourItems addObject:[CTColourItem ColourItemWithText:@"Violet"]]; // .5/0/.5
     }
     return self;
 }
@@ -67,9 +68,19 @@
 }
 
 -(UIColor*)colorForIndex:(NSInteger) index {
-    NSUInteger itemCount = _colourItems.count - 1;
-    float val = ((float)index / (float)itemCount) * 0.6;
-    return [UIColor colorWithRed: 1.0 green:val blue: 0.0 alpha:1.0];
+    _colours = [[NSMutableArray alloc] init];
+    [_colours addObject: [UIColor colorWithRed:255/255.0f green:0/255.0f blue:0/255.0f alpha:1.0f]];
+    [_colours addObject: [UIColor colorWithRed:255/255.0f green:128/255.0f blue:0/255.0f alpha:1.0f]];
+    [_colours addObject: [UIColor colorWithRed:255/255.0f green:255/255.0f blue:0/255.0f alpha:1.0f]];
+    [_colours addObject: [UIColor colorWithRed:0/255.0f green:255/255.0f blue:0/255.0f alpha:1.0f]];
+    [_colours addObject: [UIColor colorWithRed:255/255.0f green:128/255.0f blue:255/255.0f alpha:1.0f]];
+    [_colours addObject: [UIColor colorWithRed:0/255.0f green:128/255.0f blue:255/255.0f alpha:1.0f]];
+    [_colours addObject: [UIColor colorWithRed:128/255.0f green:0/255.0f blue:128/255.0f alpha:1.0f]];
+    [_colours addObject: @[@0.5,@0,@0.5]];
+//    NSUInteger itemCount = _colourItems.count - 1;
+//    float val = ((float)index / (float)itemCount) * 0.6;
+//    return [UIColor colorWithRed: colour green: 0 blue: 1 alpha:1.0];
+    return _colours[index];
 }
 
 #pragma mark - UITableViewDataDelegate protocol methods
