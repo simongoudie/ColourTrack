@@ -21,6 +21,7 @@
 		F4E2D95C179416BC0027079B /* CTColourItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E2D95B179416BC0027079B /* CTColourItem.m */; };
 		F4E2D95F17941CFB0027079B /* CTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E2D95E17941CFB0027079B /* CTTableViewCell.m */; };
 		F4E2D96117941D740027079B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E2D96017941D740027079B /* QuartzCore.framework */; };
+		F4E2D96317941F320027079B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F4E2D96217941F320027079B /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		F4E2D95D17941CFB0027079B /* CTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTTableViewCell.h; sourceTree = "<group>"; };
 		F4E2D95E17941CFB0027079B /* CTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTTableViewCell.m; sourceTree = "<group>"; };
 		F4E2D96017941D740027079B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F4E2D96217941F320027079B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				F4E2D9471794154F0027079B /* CTAppDelegate.m */,
 				F4E2D94F1794154F0027079B /* CTViewController.h */,
 				F4E2D9501794154F0027079B /* CTViewController.m */,
+				F4E2D96217941F320027079B /* .gitignore */,
 				F4E2D95D17941CFB0027079B /* CTTableViewCell.h */,
 				F4E2D95E17941CFB0027079B /* CTTableViewCell.m */,
 				F4E2D9521794154F0027079B /* CTViewController.xib */,
@@ -178,6 +181,7 @@
 				F4E2D94C1794154F0027079B /* Default@2x.png in Resources */,
 				F4E2D94E1794154F0027079B /* Default-568h@2x.png in Resources */,
 				F4E2D9541794154F0027079B /* CTViewController.xib in Resources */,
+				F4E2D96317941F320027079B /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
